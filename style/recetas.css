@@ -1,0 +1,68 @@
+/* ENCABEZADOS*/
+header.main-header{
+    text-align: center;
+    background-color: burlywood;
+}
+/* DIV MENU*/
+section{
+    background-color: white;
+}
+/* LINKs - FORMATOS*/
+a:hover{
+    background-color: rgb(109, 109, 240);
+    color: white !important;
+    font-size: larger;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:active{
+      background: deeppink;
+      text-decoration: none;
+  }
+  a:visited{
+      color: black;
+      text-decoration: none;
+  }
+  a:link{
+    color:blue;
+    text-decoration: none;
+  }
+
+#menu{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    height: 40px; 
+    align-items: center; 
+    }
+/* BOTONES - FORMATOS*/
+.btn-primary{
+    margin: 10px;
+    padding: 3px 15px;
+    flex:1 !important;
+    border: 1px black groove ;
+    color:white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+h3{
+    margin:10px 5px;
+    text-align: left;
+}
+
+img.tortas{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0px 10px;
+}
+
+article{
+    padding: 10px 10px 50px 10px;
+    margin: 10px;
+    border: 1px red groove;
+}
+p{
+    margin: 5px;
+}

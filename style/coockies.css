@@ -1,0 +1,127 @@
+/* ENCABEZADOS*/
+header.main-header{
+    text-align: center;
+    background-color: burlywood;
+}
+/* DIV MENU*/
+section{
+    background-color: white;
+}
+/* LINKs - FORMATOS*/
+a:hover{
+    background-color: rgb(109, 109, 240);
+    color: white !important;
+    font-size: larger;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:active{
+      background: deeppink;
+      text-decoration: none;
+  }
+  a:visited{
+      color: black;
+      text-decoration: none;
+  }
+  a:link{
+    color:blue;
+    text-decoration: none;
+  }
+
+#menu{
+    display: flex; /*  permite que los elementos ocupen la misma linea (uno al lado del otro)*/
+    flex-direction: row; /* define el eje principal = row(eje horizontal)
+    (column(eje vertical)= se ponen uno abajo del otro || row(eje horizontal)= uno al lado del otro)*/
+    justify-content: space-between; /* posiciona el elemento respecto de la pagi */
+    height: 40px; /* Altura del contenedor (para bajar el texto)*/
+    align-items: center; 
+    /*align-content: space-between;*/
+   
+
+    
+    /*  posiciona los items segun el eje secundario
+    if flex-direction=column >> eje secundario es horizontal
+    
+    ** stretch (extender, es el valor por defecto): los ítems se ajustan a la altura del más alto. Se ajustan para llenar el contenedor flex y es el ítem más alto el que define la altura de éste.
+    ** flex-start (principio): los ítems se alinean al comienzo del contenedor.
+    ** flex-end (fin): los ítems se alinean al fianl del contenedor.
+    ** center (centro): los ítems se alinean al centro del contenedor.
+    
+    
+    */
+   
+/*
+flex-wrap: wrap-reverse;
+.yellow{justiry-content: start
+
+
+div{
+    
+    width: 400px;  ANCHO 
+    height: 150px;  ALTO 
+    background-color: yellow;
+    border:  6px red groove; BORDE: tamaño+color+estilo | Dotted=PUNTEADO | bottom=abajo | top=arriba 
+    padding: 10px 20px 50px 400px;
+    margin: 100px auto; 
+    MARGEN >> El FLAG 'auto' funciona solo en eje X
+    
+    display: block;
+    
+     RELLENO: puede ser padding-left|padding-right|padding-top|padding-bottom
+     padding: 100px 40px 20px 10px >> 100top 40right 20bottom 10left (sentido agujas reloj)
+    Si ponemos SOLO 2 VALORES, el 1ro corresponde a ARRIBA Y ABAJO, 2do IZQ Y DERECHA
+    Si poenmos SOLO 1 VALOR aplica a todos los costados x igual 
+    text-align: center;  ALINEACION
+    display: inline-table;   DISPLAY >> para el contenido (
+        inline=utiliza el minimo necesario para mostrar el contenido
+        block= utiliza el 100% del ancho, pero se puede modificar con "width" + "height")
+}
+p{
+    font-size: 30px;
+    color: green;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+*/}
+/* BOTONES - FORMATOS*/
+.btn-primary{
+    margin: 10px;
+    padding: 3px 15px;
+    flex:1 !important;
+    border: 1px black groove ;
+    color:white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+h3{
+    margin:10px 5px;
+    text-align: center;
+}
+
+img.tortas{
+    width: 300px;
+    height: 300px;
+}
+
+div.tortas{
+    flex-direction: row;
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    margin: 30px;
+    
+}
+.card{
+    border: none;
+    display: flex;
+    image-resolution: inherit;
+    size: 400px;
+    padding: 30px;
+}
+
+div.container{
+    width: 300px;
+    height: 300px;
+}
